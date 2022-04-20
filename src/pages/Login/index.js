@@ -7,6 +7,7 @@ import {
   MailOutlined,
   ContactsOutlined,
   CopyOutlined,
+  MobileOutlined
 } from "@ant-design/icons";
 import TextInput from "../../component/input";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -164,6 +165,7 @@ function Login() {
                 autoFocus: true
               }}
             />
+            <MobileOutlined className="phoneIcon" />
             {errorMsg.phoneNo && <span className="errmsg">{errorMsg.phoneNo}</span>}
             </div>
             <TextInput
