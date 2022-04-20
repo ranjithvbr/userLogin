@@ -1,0 +1,14 @@
+@import "../../colors.scss";
+
+.loginContainer {
+    padding: 13px 78px 0;
+}
+
+.backArrow {
+    color: $ligitBlue;
+    margin: 39px 5px 25px;
+    cursor: pointer;
+    span {
+        margin-right: 9px;
+    }
+}

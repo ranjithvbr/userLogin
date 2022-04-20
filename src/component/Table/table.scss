@@ -1,0 +1,113 @@
+@import "../../colors.scss";
+
+.table-container {
+    border-radius: 10px;
+
+    tr:nth-child(even) {
+        background-color: #D6E3F4;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #F0F3F7;
+    }
+
+    tr {
+        td {
+            padding: 7px;
+            text-align: center;
+
+            &:first-child {
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+        }
+
+        th {
+            text-align: center;
+        }
+    }
+
+    .ant-table table {
+        border-spacing: 0 10px;
+    }
+
+    .ant-pagination-disabled .ant-pagination-item-link,
+    .ant-pagination-disabled:hover .ant-pagination-item-link {
+        border-color: transparent;
+    }
+
+    .ant-table-pagination {
+        display: none;
+    }
+
+    .ant-table-pagination.ant-pagination {
+        margin: 0;
+    }
+
+    .ant-table-thead>tr>th,
+    .ant-table-tbody>tr>td,
+    .ant-table tfoot>tr>th,
+    .ant-table tfoot>tr>td {
+        padding: 10px 11px;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    .ant-pagination-item {
+        margin: 20px 7px !important;
+        border: none;
+        background-color: $lightGray !important;
+        border-radius: 100px;
+        padding: 25px 15px;
+
+        a {
+            color: $ligitBlue;
+            font-weight: bold;
+            position: relative;
+            bottom: 9px;
+
+        }
+    }
+
+    .ant-pagination-item-active {
+        background-color: $lightGreen !important;
+
+        a {
+            color: #fff;
+            position: relative;
+            bottom: 9px;
+
+        }
+    }
+}
+
+.tableHeader {
+    margin: 39px 0 22px;
+    font-size: 27px;
+}
+
+.tableTab {
+    height: 40px;
+    background-color: $lightGray;
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+    >div:first-child {
+        background-color: $lightGreen;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    >div{
+        padding: 10px 20px;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../colors.scss";
+
+.rightContainer {
+    .inputContainer {
+        margin-bottom: 20px;
+    }
+
+    .inputStyle {
+        position: relative;
+        white-space: nowrap;
+        height: 50px;
+        border-radius: 100px;
+        padding: 0 30px;
+
+        input {
+            width: calc(100% - 60px);
+            border: 1px solid #D7DCE2;
+        }
+
+        span {
+            position: absolute;
+            font-size: 22px;
+            right: 15px;
+            top: 6px;
+            color: $lightGreen;
+        }
+    }
+    .errmsg {
+        font-size: 14px;
+        color: red;
+        padding: 0 30px;
+    }
+}

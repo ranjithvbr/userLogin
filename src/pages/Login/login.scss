@@ -1,0 +1,107 @@
+@import "../../colors.scss";
+
+.loginContainer {
+    padding: 13px 78px 0;
+}
+
+.backArrow {
+    color: $ligitBlue;
+    margin: 39px 5px 25px;
+
+    span {
+        margin-right: 9px;
+    }
+}
+
+.mainContainer {
+    padding: 65px 92px;
+    background-color: $lightGray;
+    display: flex;
+    justify-content: space-around;
+
+    .leftContainer {
+        width: 30rem;
+
+        img {
+            width: 100%;
+            // height: 330px;
+        }
+    }
+
+    .shareholderBold {
+        margin: 20px 0 15px;
+        font-weight: 300;
+        font-size: 27px;
+    }
+
+    .loginDescrtion {
+        font-weight: 300;
+    }
+
+    .rightContainer {
+        width: 30rem;
+        margin-left: 103px;
+
+        .captchaContainer {
+            height: 118px;
+            background-color: $mediumGray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            padding: 0 30px;
+            margin-bottom: 20px;
+
+            .whiteBoxCaptcha {
+                background-color: #fff;
+                padding: 5px 1px 2px 3px;
+            }
+        }
+
+        .submitButton {
+            width: 100%;
+            height: 57px;
+            border: 1px solid $darkBlue;
+            border-radius: 30px;
+            background-color: $darkBlue;
+        }
+    }
+}
+
+.phoneFieldContainer {
+    padding-bottom: 20px;
+    .react-tel-input {
+    display: flex;
+    input {
+        order: 2;
+        padding-left: 30px;
+    }
+    .form-control {
+        width: 100%;
+        height: 40px;
+        border-radius: 100px;
+    }
+    .flag-dropdown {
+        position: relative;
+        height: 40px;
+        border-radius: 100px !important;
+        order: 1;
+        width: 10rem;
+        margin-right: 1rem;
+    }
+    .selected-flag {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        border-radius: 100px !important;
+        background-color: #fff;
+    }
+    .errmsg {
+        font-size: 14px;
+        color: red;
+        padding: 0 30px;
+    }
+}
+}
+
