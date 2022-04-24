@@ -100,7 +100,7 @@ function Login() {
       setErrorMsg((prevState) => {
         return {
           ...prevState,
-          fullName: "FullName is required",
+          fullName: "Full Name is required",
         };
       });
       return;
@@ -161,8 +161,7 @@ function Login() {
               onBlur={() => checkValidation("phoneNo")}
               inputProps={{
                 name: 'phone',
-                required: true,
-                autoFocus: true
+                required: true
               }}
             />
             <MobileOutlined className="phoneIcon" />

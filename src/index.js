@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import Routes from './routes';
 import "./font/Titillium_Web/TitilliumWeb-Regular.ttf";
 import 'antd/dist/antd.css';

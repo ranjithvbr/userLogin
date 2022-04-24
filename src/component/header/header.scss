@@ -5,19 +5,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 13px 78px 0;
-    .labelContainer {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 15px;
-
-        span {
-            margin: 0 10px 5px;
-            text-transform: uppercase;
-            color: $ligitBlue;
-            font-weight: bold;
-            white-space: nowrap;
-        }
-    }
 
     .headerIcon {
         white-space: nowrap;
@@ -27,5 +14,32 @@
             font-size: 22px;
             color: $lightGreen;
         }
+    }
+}
+
+.labelContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+
+    span {
+        margin: 0 10px 5px;
+        text-transform: uppercase;
+        color: $ligitBlue;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        padding: 13px 20px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mobileTabContainer {
+        margin-top: 30px;
+        text-decoration: underline;
     }
 }

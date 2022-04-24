@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "TitilliumWebRegular";
+  src: local("TitilliumWebRegular"),
+    url("./font/Titillium_Web/TitilliumWeb-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  font-family: TitilliumWebRegular !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+}

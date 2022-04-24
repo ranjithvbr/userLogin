@@ -8,7 +8,7 @@ export default function Home() {
   let navigate = useNavigate();
   return (
     <div>
-      <div className="loginContainer">
+      <div className="home">
         <div className="backArrow" onClick={() => navigate("/")}>
           <ArrowLeftOutlined /> Back to Investors Page
         </div>

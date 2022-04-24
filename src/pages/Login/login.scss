@@ -20,10 +20,11 @@
     justify-content: space-around;
 
     .leftContainer {
-        width: 30rem;
+        width: 50%;
 
         img {
             width: 100%;
+            min-width: 25rem;
             // height: 330px;
         }
     }
@@ -39,9 +40,9 @@
     }
 
     .rightContainer {
-        width: 30rem;
+        width: 50%;
         margin-left: 103px;
-
+        // display: grid;
         .captchaContainer {
             height: 118px;
             background-color: $mediumGray;
@@ -51,6 +52,7 @@
             border-radius: 12px;
             padding: 0 30px;
             margin-bottom: 20px;
+            // min-width: 20rem;
 
             .whiteBoxCaptcha {
                 background-color: #fff;
@@ -92,6 +94,7 @@
             width: 100%;
             height: 40px;
             border-radius: 100px;
+            padding-right: 50px;
         }
 
         .flag-dropdown {
@@ -117,5 +120,48 @@
             color: red;
             padding: 0 30px;
         }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .loginContainer {
+        padding: 13px 20px 0;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .mainContainer .leftContainer img {
+        min-width: 21.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerCenterContainer .news > div span {
+        text-decoration: underline;
+    }
+    .mainContainer {
+        .leftContainer {
+            display: none;
+        }
+
+        .rightContainer {
+            width: 100%;
+            margin-left: auto;
+            .inputStyle {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainContainer {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .mainContainer .rightContainer .captchaContainer {
+        background-color: transparent;
     }
 }

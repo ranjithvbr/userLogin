@@ -1,7 +1,6 @@
 @import "../../colors.scss";
 
 .table-container {
-    border-radius: 10px;
 
     tr:nth-child(even) {
         background-color: #D6E3F4;
@@ -55,11 +54,17 @@
     .ant-table tfoot>tr>td {
         padding: 10px 11px;
     }
+
+    .ant-pagination-item-active:hover a {
+        color: #fff;
+    }
+
 }
 
 .pagination {
     display: flex;
     justify-content: center;
+
     .ant-pagination-item {
         margin: 20px 7px !important;
         border: none;
@@ -94,20 +99,27 @@
 }
 
 .tableTab {
-    height: 40px;
     background-color: $lightGray;
     display: flex;
     align-items: center;
     margin-bottom: 34px;
+
     >div:first-child {
         background-color: $lightGreen;
-        height: 40px;
         display: flex;
         align-items: center;
         color: #fff;
     }
-    >div{
+
+    >div {
         padding: 10px 20px;
         font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .table-container .ant-table-thead > tr > th, .table-container .ant-table-tbody > tr > td, .table-container .ant-table tfoot > tr > th, .table-container .ant-table tfoot > tr > td {
+        padding: 2px;
+        text-align: left;
     }
 }

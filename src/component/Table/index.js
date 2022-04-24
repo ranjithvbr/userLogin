@@ -110,6 +110,7 @@ const columns = [
     title: "Date of declaration of Postal Ballot",
     dataIndex: "Postal",
     key: "Postal",
+    responsive: ['md'],
   },
   {
     title: "Record Date",
@@ -120,11 +121,13 @@ const columns = [
     title: "Closing Date of Postal Ballot",
     dataIndex: "ClosingDate",
     key: "ClosingDate",
+    responsive: ['md'],
   },
   {
     title: "Date of declaration of Outcome",
     dataIndex: "Outcome",
     key: "Outcome",
+    responsive: ['md'],
   },
   {
     title: "Resolution",

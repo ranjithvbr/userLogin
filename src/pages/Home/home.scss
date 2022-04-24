@@ -1,6 +1,6 @@
 @import "../../colors.scss";
 
-.loginContainer {
+.home {
     padding: 13px 78px 0;
 }
 
@@ -10,5 +10,17 @@
     cursor: pointer;
     span {
         margin-right: 9px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home .backArrow {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .home {
+        padding: 13px 20px 0;
     }
 }

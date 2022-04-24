@@ -8,7 +8,7 @@ import {
   InstagramOutlined,
   LinkedinOutlined,
   YoutubeOutlined,
-  SendOutlined
+  SendOutlined,
 } from "@ant-design/icons";
 import award1 from "../../images/award1.jpeg";
 import award2 from "../../images/award2.jpeg";
@@ -69,33 +69,44 @@ export default function Footer() {
         </div>
         <div className="footerCenterContainer">
           <div>Recent News</div>
-          <div className="news newsFirstChild">
+          <div className="news">
             <img src={award1} alt="award" />
             <div>
-              March 12, 2022
-              <br />
-              Dr. Azad Moopen honoured with a Doctorate for Philanthrophy by
-              Amity University, Dubai.
-              <br />
+              <div>
+                March 12, 2022
+                <br />
+                Dr. Azad Moopen honoured with a Doctorate for Philanthrophy by
+                Amity University, Dubai.
+                <br />
+              </div>
               <span>Read More</span>
             </div>
           </div>
-          <div className="news">
-            <img src={award2} alt="award" />
-            <div>
-              February 09, 2022
-              <br />
-              Evolving ESG Expectations Shape World's Most Sustainable
-              Corporations Ranking for 2022
-              <br />
+            <div className="news newslastChild">
+              <img src={award2} alt="award" />
+              <div>
+              <div>
+                February 09, 2022
+                <br />
+                Evolving ESG Expectations Shape World's Most Sustainable
+                Corporations Ranking for 2022
+                <br />
+              </div>
               <span>Read More</span>
             </div>
           </div>
         </div>
         <div className="footerRightContainer">
-          <span className="rightContainerTitle">Subscribe to our Newsletter</span>
-          <TextInput placeholder={"Enter your email here"} customClassName="footerInput" suffix={<SendOutlined />} />
+          <span className="rightContainerTitle">
+            Subscribe to our Newsletter
+          </span>
+          <TextInput
+            placeholder={"Enter your email here"}
+            customClassName="footerInput"
+            suffix={<SendOutlined />}
+          />
           <span className="stayInformedStyle">Stay Informed</span>
+          <div className="footerIconContainer">
           <div className="asterStyle">Aster Medical Journal</div>
           <div className="rightContainerIcons">
             <FacebookOutlined />
@@ -104,6 +115,7 @@ export default function Footer() {
             <LinkedinOutlined />
             <YoutubeOutlined />
           </div>
+          </div>
         </div>
       </div>
       <div className="designedBy">
@@ -111,7 +123,9 @@ export default function Footer() {
           <img src={companyLogo} alt="logoWithbackground" />
         </div>
         <div>
-          @ 2021 Aster DM HealthCare. All rights reserved.<br /><span>{`Designed and Developed by <blue/ogic>`}</span>
+          @ 2021 Aster DM HealthCare. All rights reserved.
+          <br />
+          <span>{`Designed and Developed by <blue/ogic>`}</span>
         </div>
       </div>
     </div>
