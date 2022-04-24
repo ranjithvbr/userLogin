@@ -24,6 +24,10 @@
         padding: 10px 14px;
         margin-right: 15px;
 
+        .anticon-phone {
+            transform: rotate(100deg);
+        }
+
         span {
             font-size: 16px;
         }
@@ -70,9 +74,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 4;
+            -webkit-line-clamp: 3;
             height: fit-content;
             -webkit-box-orient: vertical;
+
             span {
                 position: absolute;
                 bottom: 0;
@@ -102,7 +107,7 @@
         font-weight: bold;
         width: 10rem;
         line-height: 0.9;
-        margin: 15px 0;
+        margin: 15px 50px 15px 0;
     }
 
     .rightContainerIcons {
@@ -136,11 +141,13 @@
     align-items: center;
     margin: 20px 0 20px;
     padding: 0 20px 0 15px;
+
     img {
         padding: 6px;
         background-color: #fff;
     }
 }
+
 .footerRightContainer .inputStyle {
     padding-right: 40px;
 }
@@ -152,23 +159,34 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .footerLeftContainer > div {
+        padding-right: 35px;
+    }
+}
+
 @media screen and (max-width: 760px) {
     .footerHeader {
         display: grid;
         padding: 0 0 20px;
+
         div:nth-child(2) {
-            margin: 10px 0 ;
+            margin: 10px 0;
         }
     }
+
     .footerBottom {
         display: inline;
     }
+
     .footerLeftContainer {
         justify-content: center;
-        > div {
+
+        >div {
             display: flex;
             flex-wrap: wrap;
             padding-right: initial;
+
             div {
                 margin-right: 10px;
                 white-space: nowrap;
@@ -176,27 +194,34 @@
             }
         }
     }
+
     .footerCenterContainer {
         margin: 20px 0;
         width: auto;
     }
+
     .footerRightContainer {
         width: auto;
         margin: auto;
+
         .inputStyle {
             width: 16rem;
         }
     }
+
     .designedBy {
         padding: 0;
         margin: 0;
-        > div:first-child {
+
+        >div:first-child {
             padding-right: 2rem;
         }
     }
+
     .footerIconContainer {
         display: flex;
         justify-content: space-between;
+
         .rightContainerIcons {
             margin: 15px 0;
         }

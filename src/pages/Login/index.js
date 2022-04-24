@@ -70,7 +70,7 @@ function Login() {
     let valiodationMsg = ""
     if (fieldName === "fullName") {
       const validFullName = fieldValue.fullName.match(/^[a-zA-Z ]*$/);
-      valiodationMsg = validFullName ? "" : "Number is notvalid";
+      valiodationMsg = validFullName ? "" : "Number is not allowed";
     } else if (fieldName === "email") {
       const validEmail = fieldValue.email.match(
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
